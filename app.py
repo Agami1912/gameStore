@@ -6,7 +6,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# 🔧 קביעת הגדרות האפליקציה
+#  קביעת הגדרות האפליקציה
 app.config['SECRET_KEY'] = 'your_secret_key'  # יש להחליף במפתח סודי אמיתי
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///game_store.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
