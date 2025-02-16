@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layout.html" %}
 
-</body>
-</html>
+{% block title %}Dashboard - Game Store{% endblock %}
+
+{% block content %}
+    <h2>Welcome to the Game Store Dashboard</h2>
+
+    <section id="game-management">
+        <h3>Game Inventory</h3>
+        <button id="add-game">Add Game</button>
+        <ul id="game-list"></ul>
+    </section>
+
+    <section id="customer-management">
+        <h3>Customer Management</h3>
+        <button id="add-customer">Add Customer</button>
+        <ul id="customer-list"></ul>
+    </section>
+
+    <!-- חיבור לקובץ ה-JS החיצוני -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}
