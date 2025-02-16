@@ -1,0 +1,133 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Main content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"], button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Game Management */
+#game-management, #customer-management {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Loan System */
+#loan-list {
+    margin-top: 20px;
+}
